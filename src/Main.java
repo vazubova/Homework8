@@ -3,7 +3,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        int[] first = new int[]{1, 2, 3};
+        int[] first = new int[3];
+        first [0] = 1;
+        first [1] = 2;
+        first [2] = 3;
         System.out.println(Arrays.toString(first));
 
         double[] second = {1.57, 7.654, 9.986};
@@ -69,8 +72,8 @@ public class Main {
 
 
         for (int i = 0; i < first.length; i++) {
-            if (i % 2 == 0) {
-                first[i] = first[i] + 1;
+            if (first[i] % 2 != 0) {
+                first[i]++;
             }
 
         }
